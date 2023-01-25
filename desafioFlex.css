@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #FAF7FD;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto {
+    margin-top: 10%;
+    width: 213px;
+    height: 213px;
+    background-image: url(./assets/eclipse/Mask\ Group.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram {
+
+    margin-top: 15px;
+    margin-bottom: 33px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.sites {
+    display:flex;
+    flex-direction: column;
+    
+    /* para separar os itens */
+    gap: 18px;
+    
+    list-style: none;
+}
+
+li {
+    display: flex;
+    width: 326px;
+    height: 49px;
+}
+
+li a {
+    display: flex;
+    
+    /* para alinhar o texto na vertical*/
+    align-items: center;
+    
+    /* para alinhar o texto na horizontal */
+    justify-content: center;
+    
+    /* para ocupar 100% do container pai (li) */
+    flex-basis: 100%;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+    border: 2px solid #BB99DD;
+    border-radius: 4px;
+
+    transition: ease 0.3s;
+}
+
+li a:hover {
+    background: #ccbbff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    color: #FAF7FD;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    width: 250px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 30PX;
+    margin-bottom: 5%;
+}
+
+.icons a {
+    height: 25px;
+
+    transform: scale(0.9);
+    transition: ease 0.3s;
+}
+
+.icons a:hover {
+    transform: scale(1.3);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    color: grey;
+    background: lightgrey;
+
+    justify-content:end;
+    text-align: center;
+}
